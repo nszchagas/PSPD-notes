@@ -1,0 +1,16 @@
+#!/bin/bash
+# Script to run the first code with and without fork and compare times.
+
+echo "Sem fork" 
+
+gcc sem_fork.c -o a.out
+
+time ./a.out
+
+echo "Com fork"
+
+gcc com_fork.c -o a.out
+
+time ./a.out
+
+rm a.out
