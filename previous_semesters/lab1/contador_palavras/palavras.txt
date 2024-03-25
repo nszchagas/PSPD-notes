@@ -1,0 +1,5 @@
+caio caio caio
+yuri yuri yuri
+a a a b b a a c
+x z xz zx zx xz
+z x z x x z z x

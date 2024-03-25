@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Resumo P1</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="cd62ae68-b117-4ee0-933a-abadf2d288dc" class="page sans"><header><h1 class="page-title">Resumo P1</h1><p class="page-description"></p></header><div class="page-body"><h1 id="a3975316-f40f-4ffa-8543-fb9f8628e1eb" class="">Clusters</h1><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Surgimento dos Clusters</summary><div class="indented"><p id="7d2281e9-1575-4892-a357-8d2ddf1d2893" class="">O surgimento dos clusters está relacionado a uma série de motivos e necessidades no campo da computação e do processamento de dados. Os clusters são agrupamentos de computadores interconectados que trabalham juntos para resolver problemas ou realizar tarefas de processamento de dados de forma mais eficiente. Aqui estão alguns dos principais motivos que levaram ao surgimento dos clusters:</p><ol type="1" id="02262b27-779c-4d83-a672-90ad434f585c" class="numbered-list" start="1"><li><strong>Melhoria de Desempenho e Escalabilidade</strong>: À medida que as cargas de trabalho de processamento de dados se tornaram mais complexas e exigentes em termos de recursos computacionais, os clusters surgiram como uma solução para melhorar o desempenho e a escalabilidade. Ao agrupar vários computadores em um cluster, é possível dividir as tarefas e realizar o processamento paralelo, acelerando a conclusão das tarefas.</li></ol><ol type="1" id="7ee7724e-1f2c-4b6a-aa04-0ca83603737e" class="numbered-list" start="2"><li><strong>Redundância e Alta Disponibilidade</strong>: Clusters também são usados para melhorar a disponibilidade e a redundância de sistemas. Por exemplo, em clusters de servidores, se um servidor falhar, os outros servidores no cluster podem continuar a fornecer serviços, garantindo a continuidade operacional.</li></ol><ol type="1" id="2ef04d4d-80e5-43bd-af3a-201d6af15527" class="numbered-list" start="3"><li><strong>Balanceamento de Carga</strong>: Clusters são usados para distribuir cargas de trabalho de forma equitativa entre os nós do cluster. Isso ajuda a evitar gargalos de desempenho em sistemas distribuídos.</li></ol><ol type="1" id="5fc38dd4-8f97-4ab1-a665-ac1533ea5ea2" class="numbered-list" start="4"><li><strong>Facilidade de Gerenciamento</strong>: Clusters podem simplificar o gerenciamento de recursos de computação, uma vez que é mais fácil gerenciar e administrar um conjunto de computadores semelhantes agrupados do que muitos sistemas independentes.</li></ol><ol type="1" id="4a241467-ace5-44e7-b6ee-8c25718add10" class="numbered-list" start="5"><li><strong>Baixo Custo</strong>: O uso de hardware de commodity (commodities) em clusters, como servidores x86, torna os clusters uma opção econômica para empresas e organizações que desejam aumentar a capacidade de computação sem gastar muito em hardware especializado.</li></ol><p id="a8e2b6c1-c4c2-4515-b0ed-27e8c09b943e" class="">Tipos de Clusters e Suas Características/Propriedades:</p><ol type="1" id="ac5aa17e-e0d7-49c5-a6fc-0d9f04261703" class="numbered-list" start="1"><li><strong>Clusters de Alta Disponibilidade (HA)</strong>:<ul id="ae5227e4-78b9-4b49-850e-42bea7801df3" class="bulleted-list"><li style="list-style-type:disc">Característica: Fornecem alta disponibilidade e tolerância a falhas. Se um nó falhar, outro nó assume automaticamente.</li></ul><ul id="6f8c1a3a-a014-4092-bd03-ec9ca76bacd7" class="bulleted-list"><li style="list-style-type:disc">Exemplo: Clusters de servidores web de alta disponibilidade.</li></ul></li></ol><ol type="1" id="42a7ff38-27e9-4dc9-8fc1-98074e316d3b" class="numbered-list" start="2"><li><strong>Clusters de Computação de Alto Desempenho (HPC)</strong>:<ul id="e08d3e2a-6d09-42e8-bba8-9a9d7450e5df" class="bulleted-list"><li style="list-style-type:disc">Característica: Projetados para processamento intensivo de cálculos científicos e simulações. Usam paralelismo para acelerar o processamento.</li></ul><ul id="673d3872-7826-4db0-8351-38d91b5dd166" class="bulleted-list"><li style="list-style-type:disc">Exemplo: Clusters usados em pesquisa científica e simulações de modelagem climática.</li></ul></li></ol><ol type="1" id="e867ba74-dd1e-4089-9f56-203abb6ca7f0" class="numbered-list" start="3"><li><strong>Clusters de Balanceamento de Carga</strong>:<ul id="ecb0cabe-9d19-47dd-9817-b2eb48c4d8f2" class="bulleted-list"><li style="list-style-type:disc">Característica: Distribuem o tráfego de rede ou as solicitações de serviços de maneira uniforme entre os nós para evitar sobrecarga.</li></ul><ul id="99a999c3-8b2c-4f33-b9ab-9e27f81e94b4" class="bulleted-list"><li style="list-style-type:disc">Exemplo: Clusters de balanceamento de carga em servidores web.</li></ul></li></ol><ol type="1" id="26e6964a-4068-4d5d-9c4b-62be13452949" class="numbered-list" start="4"><li><strong>Clusters de Armazenamento (Storage)</strong>:<ul id="b837e789-a361-4b0b-b88c-1718ea965a82" class="bulleted-list"><li style="list-style-type:disc">Característica: Usados para gerenciar e armazenar grandes volumes de dados de forma eficiente e escalável.</li></ul><ul id="38167a62-3659-40ba-8325-614c6c26fd18" class="bulleted-list"><li style="list-style-type:disc">Exemplo: Clusters de armazenamento de dados distribuídos, como o Hadoop HDFS.</li></ul></li></ol><ol type="1" id="90cbe062-fa38-4a2e-b693-71cde97d4278" class="numbered-list" start="5"><li><strong>Clusters de Virtualização</strong>:<ul id="2163ad49-b9f3-4b45-affa-319c94e9226a" class="bulleted-list"><li style="list-style-type:disc">Característica: Usam a virtualização para criar múltiplas máquinas virtuais em um conjunto de servidores físicos.</li></ul><ul id="cdd61076-55e5-456e-a400-cccff9238e86" class="bulleted-list"><li style="list-style-type:disc">Exemplo: Clusters de virtualização com VMware vSphere ou Kubernetes.</li></ul></li></ol><p id="3bd04c2d-3012-49a9-b8ee-85c691e47e70" class="">Esses são apenas alguns exemplos de tipos de clusters, e suas características podem variar dependendo das necessidades específicas de uma aplicação ou ambiente. Em geral, os clusters são projetados para melhorar o desempenho, a disponibilidade e a escalabilidade de sistemas e aplicativos, tornando-os uma solução valiosa em várias áreas da computação.</p></div></details><h1 id="75130779-0079-400b-81e0-5d57c791b161" class="">Hadoop</h1><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">MapReduce</summary><div class="indented"><p id="af0ef21c-f876-4d9a-abd4-db97cc8b98f5" class="">O MapReduce é um modelo de programação e um paradigma de processamento de dados utilizado para realizar operações de processamento distribuído em grandes conjuntos de dados em clusters de computadores. Foi originalmente desenvolvido pelo Google e posteriormente popularizado e implementado no Hadoop, um ecossistema de código aberto amplamente utilizado para big data.</p><p id="2153f1a3-1505-41d6-bcde-c81fedc186f6" class="">O modelo MapReduce é composto por duas principais etapas:</p><ol type="1" id="43cdad49-54e3-48e9-9af1-e89abe90c4b5" class="numbered-list" start="1"><li><strong>Map (Mapeamento)</strong>: Nesta fase, os dados de entrada são divididos em partes menores chamadas de &quot;splits&quot;. Cada split é então processado independentemente por várias tarefas de mapeamento (funções Map). A função Map recebe um conjunto de dados e gera pares chave-valor intermediários como saída. O objetivo do mapeamento é filtrar, classificar e transformar os dados de entrada em um formato mais adequado para a próxima fase.</li></ol><ol type="1" id="44fc8659-fd78-49a4-9a61-89dcfe744ef9" class="numbered-list" start="2"><li><strong>Shuffle e Sort (Embaralhamento e Ordenação)</strong>: Após a fase de mapeamento, os pares chave-valor intermediários gerados por todas as tarefas de mapeamento precisam ser agrupados, ordenados e redistribuídos para as tarefas de redução. Isso envolve a etapa de embaralhamento e ordenação, que garante que todos os valores associados a uma mesma chave sejam enviados para a mesma tarefa de redução.</li></ol><ol type="1" id="dce47454-9816-4451-a254-14373a383fce" class="numbered-list" start="3"><li><strong>Reduce (Redução)</strong>: Nesta fase, os dados agrupados e ordenados são processados por funções de redução (funções Reduce). Cada função de redução recebe um conjunto de pares chave-valor que compartilham a mesma chave. O objetivo da função de redução é realizar operações de agregação, resumo ou qualquer processamento adicional necessário nos dados agrupados. O resultado final de cada função de redução é geralmente uma saída agregada ou um subconjunto dos dados processados.</li></ol><p id="747ac7ae-c651-4f05-9064-66f2c28302af" class="">O MapReduce oferece várias vantagens:</p><ul id="b8f475ff-eec7-41d7-9a4c-a8a180d82d0b" class="bulleted-list"><li style="list-style-type:disc"><strong>Escalabilidade</strong>: Pode ser usado em clusters de computadores de grande escala para lidar com conjuntos de dados massivos.</li></ul><ul id="39de3be9-808f-471e-bb7d-4cf80f8cd0b9" class="bulleted-list"><li style="list-style-type:disc"><strong>Tolerância a falhas</strong>: O modelo MapReduce é projetado para ser resiliente a falhas. Se um nó do cluster falhar, o framework redistribui automaticamente as tarefas para outros nós.</li></ul><ul id="452bf15c-6a09-4d30-889c-a380277700b2" class="bulleted-list"><li style="list-style-type:disc"><strong>Programação simplificada</strong>: O programador não precisa se preocupar com detalhes de paralelismo, sincronização ou distribuição de dados. O modelo MapReduce cuida disso.</li></ul><ul id="f7c55a2e-7379-4adf-a28e-e1410ac9f5c2" class="bulleted-list"><li style="list-style-type:disc"><strong>Flexibilidade</strong>: Pode ser aplicado a uma ampla gama de problemas, desde processamento de logs até análise de dados complexa.</li></ul><p id="1887e253-b165-4c97-a93a-d5f054da5acb" class="">No entanto, o MapReduce tem algumas limitações, como a necessidade de escrita de código em um estilo específico de mapeamento e redução e o fato de ser mais adequado para cargas de trabalho de processamento em lote em vez de consultas interativas em tempo real.</p><p id="645dfd26-a496-4101-89e7-2d5d7274d771" class="">Apesar dessas limitações, o MapReduce e o ecossistema Hadoop continuam sendo ferramentas valiosas para processamento de big data em muitas organizações, e muitas vezes são combinados com outras tecnologias, como o Apache Spark, para abordar as necessidades de análise de dados em tempo real.</p></div></details><h1 id="ea527429-6117-4a0c-a67b-f65224d29f14" class="">Spark</h1><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">RDDs</summary><div class="indented"><ul id="bc09d482-5e5b-4fa1-93e0-41b881881fe4" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">RDDs (Resilient Distributed Datasets) são uma estrutura de dados fundamental em Apache Spark, um framework de processamento de big data. Os RDDs são uma abstração de dados distribuídos que fornecem uma maneira de representar e manipular dados de forma distribuída em um cluster de computadores.</mark></li></ul><ol type="1" id="2af36775-c76e-4ea7-bece-e45b847309a5" class="numbered-list" start="1"><li>Resiliente (Resilient): O &quot;R&quot; em RDD refere-se à capacidade de recuperação de falhas. Os RDDs são capazes de recuperar automaticamente dados perdidos devido a falhas em nós do cluster. Isso é alcançado por meio de uma técnica chamada lineage, que mantém um registro das transformações aplicadas aos dados e pode recriar os dados perdidos a partir dessas transformações.</li></ol><ol type="1" id="e7b2b903-6fce-4bcb-9af6-13296bf02bbd" class="numbered-list" start="2"><li>Distribuído (Distributed): Os RDDs são projetados para distribuir dados em várias máquinas em um cluster. Isso permite que o processamento de dados seja paralelizado e escalável horizontalmente, aproveitando a capacidade de várias máquinas em conjunto.</li></ol><ol type="1" id="da4e7015-c6f2-4fc4-8339-8152e69d2b0b" class="numbered-list" start="3"><li>Dataset (Conjunto de Dados): Um RDD é basicamente um conjunto de dados imutável, particionado em várias partes chamadas de partições. Cada partição pode ser processada de forma independente em um nó do cluster.</li></ol><ol type="1" id="f1516b6c-3853-4039-8c62-f00ba3f7ab9b" class="numbered-list" start="4"><li>Tolerante a falhas: Como mencionado anteriormente, os RDDs são resilientes a falhas, o que significa que, se um nó no cluster falhar, os dados podem ser recuperados e o processamento pode continuar em outro nó sem perda de dados.</li></ol><ol type="1" id="3f08cf2a-f038-4afe-9a6a-16cd2d2abf03" class="numbered-list" start="5"><li>Transformações e Ações: Os RDDs suportam duas principais operações: transformações e ações. Transformações são operações que criam um novo RDD a partir de um RDD existente, como map, filter e reduce. As ações são operações que retornam resultados ou enviam dados de volta ao driver do Spark, como count e collect.</li></ol><ol type="1" id="7f815679-ee68-47a5-8834-28ca99d6bc3d" class="numbered-list" start="6"><li>Imutabilidade: Os RDDs são imutáveis, o que significa que, uma vez criados, eles não podem ser alterados. Qualquer operação que pareça modificar um RDD na verdade cria um novo RDD.</li></ol><ol type="1" id="91bcd873-4a48-4e21-b095-fa74a7cb8bcf" class="numbered-list" start="7"><li>Lazy Evaluation: O Spark utiliza avaliação preguiçosa (lazy evaluation), o que significa que as transformações em um RDD não são executadas imediatamente. Em vez disso, as transformações são registradas e são executadas apenas quando uma ação é chamada. Isso permite que o Spark otimize o plano de execução.</li></ol><ul id="17705101-a439-4460-a5c9-0d0b0e18cc18" class="bulleted-list"><li style="list-style-type:disc">Os RDDs foram a base do processamento de dados no Apache Spark, mas a partir da versão 2.0, o Spark introduziu o conceito de DataFrames e Datasets, que oferecem otimizações de desempenho e uma API mais rica para trabalhar com dados estruturados. No entanto, os RDDs ainda são úteis em cenários onde a estrutura dos dados não é bem definida ou quando é necessária uma manipulação de baixo nível dos dados.</li></ul><p id="af6207bb-b6a3-4ed6-b83c-9e50cf1a1962" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Replicação/Consistência</summary><div class="indented"><ul id="b5d6d698-8e6f-40e0-a506-8e735e7048cf" class="bulleted-list"><li style="list-style-type:disc">A replicação de dados é uma técnica usada em sistemas distribuídos para criar cópias dos dados em vários servidores ou nós do sistema. A principal finalidade da replicação é melhorar a disponibilidade, escalabilidade e confiabilidade dos sistemas, permitindo que os dados estejam disponíveis mesmo em caso de falhas de hardware ou de rede. No entanto, a replicação também introduz desafios relacionados à consistência dos dados.</li></ul><ul id="4e659129-30cd-4585-b382-5b52f42d4cd9" class="bulleted-list"><li style="list-style-type:disc">A replicação envolve a criação e manutenção de cópias dos dados em diferentes servidores ou nós.</li></ul><ul id="4e60f136-273f-414a-beae-3342e32cc553" class="bulleted-list"><li style="list-style-type:disc">As réplicas podem ser distribuídas geograficamente para fornecer alta disponibilidade e reduzir a latência para os usuários em diferentes localizações.</li></ul><ul id="7213b9cf-8b60-4ab4-b0c9-5fd6dcf61d5c" class="bulleted-list"><li style="list-style-type:disc">Cada cópia de dados é chamada de &quot;réplica&quot;, e um dos servidores é geralmente designado como &quot;nó mestre&quot; ou &quot;nó primário&quot;, enquanto os outros são &quot;nós de réplica&quot; ou &quot;nós secundários&quot;.</li></ul><ul id="ef83dea6-db09-4cc9-ba78-1f9f2e399093" class="bulleted-list"><li style="list-style-type:disc">A consistência dos dados refere-se à garantia de que as diferentes cópias dos dados estejam sempre em um estado coerente e que todas as operações de leitura e gravação produzam resultados previsíveis e corretos.</li></ul><ul id="83971b1c-a284-4c3b-8cdd-705981b6c6d2" class="bulleted-list"><li style="list-style-type:disc">A consistência é fundamental para garantir a integridade dos dados e evitar problemas como leituras de dados desatualizados (stale data) ou gravações conflitantes.</li></ul><p id="d25a1cee-034d-4deb-afe3-39e908b46480" class="">→ Existem diferentes modelos de consistência que descrevem como as operações de leitura e gravação são percebidas pelos clientes em sistemas de replicação. Alguns exemplos incluem:</p><ul id="5fe8c942-a93c-47dd-a3b7-cf88eae73451" class="bulleted-list"><li style="list-style-type:disc">Consistência Forte: Garante que todas as operações de leitura sempre vejam os resultados mais recentes das operações de gravação.</li></ul><ul id="3238e3fb-7449-440d-ba3e-a16d2e2f2b0c" class="bulleted-list"><li style="list-style-type:disc">Consistência Causal: Garante que as operações sejam percebidas na ordem em que foram causadas logicamente.</li></ul><ul id="ae22f825-084c-4c87-bd0e-7755854f3acf" class="bulleted-list"><li style="list-style-type:disc">Consistência Eventual: Garante que, em algum momento no futuro, todas as réplicas estarão em um estado consistente, mas não necessariamente imediatamente após uma gravação.</li></ul><ul id="18f4bff7-e1ce-43db-9a18-78066ffb95f0" class="bulleted-list"><li style="list-style-type:disc">Para manter a consistência dos dados, os sistemas de replicação geralmente utilizam protocolos específicos, como replicação síncrona ou assíncrona.</li></ul><ul id="c740fdbd-f8a3-4aff-8c1c-80cff2bf4237" class="bulleted-list"><li style="list-style-type:disc">Na replicação síncrona, todas as operações de gravação só são consideradas concluídas após serem confirmadas por todas as réplicas, garantindo alta consistência.</li></ul><ul id="563e633c-d116-4a1d-bc2d-59f119457128" class="bulleted-list"><li style="list-style-type:disc">Na replicação assíncrona, as operações de gravação são confirmadas no nó mestre e depois replicadas para os nós secundários, o que pode resultar em maior latência, mas pode oferecer maior escalabilidade e disponibilidade.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Solução de Lamport</summary><div class="indented"><p id="2d62bc1d-e65a-47de-84b5-c1433c82819e" class="">A solução de Lamport refere-se a um método proposto por Leslie Lamport, um renomado cientista da computação, para resolver o problema da ordenação de eventos em sistemas distribuídos. Esse problema, conhecido como &quot;clock lógico de Lamport&quot; ou &quot;relógio de Lamport&quot;, é fundamental em sistemas distribuídos para garantir a consistência e a ordenação adequada de eventos que ocorrem em diferentes nós ou processos.</p><p id="bee90b27-3848-4eef-a543-76adc24b8e26" class="">O problema que a solução de Lamport visa resolver é o seguinte: em um sistema distribuído, onde eventos podem ocorrer de forma concorrente em vários nós, como determinar a ordem precisa em que esses eventos ocorreram globalmente? Em sistemas distribuídos, não há um relógio global único que possa ser usado para registrar a ordem dos eventos.</p><p id="35887722-a281-4431-bdfb-65d5c69846e7" class="">A solução de Lamport aborda esse problema introduzindo relógios lógicos, também conhecidos como &quot;carimbos de tempo lógicos&quot;, associados a cada evento em cada nó do sistema. Os relógios lógicos de Lamport não são relógios no sentido tradicional, mas sim números inteiros que são atribuídos a eventos.</p><p id="c8fa7919-4d57-4374-aa49-6202e9518900" class="">A ideia fundamental por trás da solução de Lamport é a seguinte:</p><ol type="1" id="24f01544-3d84-4126-a4e2-2b1de1eaf0bc" class="numbered-list" start="1"><li>Cada nó ou processo atribui um carimbo de tempo lógico (um número inteiro) a cada evento que ele cria. O carimbo de tempo é local e monotonamente crescente.</li></ol><ol type="1" id="32df0ba2-e485-430b-9f58-b1a3e3340172" class="numbered-list" start="2"><li>Quando um evento é enviado de um nó para outro, o carimbo de tempo do evento é incluído na mensagem.</li></ol><ol type="1" id="8db65975-af42-4e6b-bc41-90f146b2efae" class="numbered-list" start="3"><li>Quando um nó recebe uma mensagem, ele compara o carimbo de tempo da mensagem com o seu próprio carimbo de tempo local. Ele ajusta seu carimbo de tempo local para ser maior do que o carimbo de tempo da mensagem, refletindo que ele observou esse evento.</li></ol><p id="7d4b0be5-c034-4eab-b338-9d5385588b1d" class="">Esses carimbos de tempo lógicos permitem que os eventos sejam parcialmente ordenados. Embora os carimbos de tempo lógicos não forneçam uma ordenação absoluta, eles garantem que eventos causais (aqueles que têm uma relação causal) serão ordenados corretamente. Isso é conhecido como &quot;ordem parcial&quot; ou &quot;ordem causal&quot;.</p><p id="00d0943f-5c0b-44a4-83f2-1ef914e7454b" class="">A solução de Lamport é uma abordagem simples e elegante para a ordenação de eventos em sistemas distribuídos e é frequentemente usada como base para a implementação de algoritmos mais avançados de ordenação de eventos, como o relógio vetorial de Leslie Lamport, que estende os conceitos do relógio lógico de Lamport para fornecer uma ordenação mais precisa em sistemas distribuídos complexos.</p></div></details><h1 id="2f59e813-9b3f-4630-bd94-e71587353147" class="">MPI</h1><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Redes P2P</summary><div class="indented"><p id="96437f78-7ecd-4fd8-b087-65b87be4edcc" class="">Os algoritmos de hash consistente são necessários em redes P2P (Peer-to-Peer) para resolver o problema de distribuição eficiente de dados entre os nós da rede. Eles são particularmente úteis em cenários nos quais os dados precisam ser distribuídos de forma equilibrada entre os nós, como sistemas de armazenamento distribuído, caches distribuídas, ou sistemas de balanceamento de carga.</p><p id="1d583a27-c901-41d2-8e16-76a74ff520fa" class="">A principal função desses algoritmos é mapear chaves ou identificadores (como IDs de nós) para os nós da rede de maneira consistente, garantindo que, mesmo que os nós entrem ou saiam da rede, a maioria das chaves ainda seja mapeada para os mesmos nós. Isso é importante para manter a estabilidade na distribuição dos dados e evitar movimentações excessivas de dados quando os nós são adicionados ou removidos.</p><p id="e77cd3ce-7659-404b-8f58-b9f07b9fcc09" class="">Um exemplo de algoritmo de hash consistente bem conhecido é o &quot;Consistent Hashing.&quot; Nesse algoritmo, um anel é usado para representar os nós da rede. Cada nó é associado a uma ou várias posições no anel, e as chaves ou identificadores são mapeados para uma posição no anel usando uma função de hash. A chave é então associada ao nó mais próximo no sentido horário no anel. Isso garante que a maioria das chaves permaneça no mesmo nó, a menos que um nó seja adicionado ou removido.</p><p id="b18ba548-b500-4511-98c8-f3d59eccae13" class="">Por exemplo, se temos um anel com três nós (A, B e C) e usamos a função de hash para mapear uma chave &quot;K&quot; para o anel, a chave &quot;K&quot; será associada ao nó mais próximo no sentido horário no anel. Se &quot;K&quot; mapear para a região entre B e C, então será associada a &quot;C&quot;. Se um novo nó &quot;D&quot; for adicionado, apenas as chaves que mapeiam para a região entre C e D serão movidas para o novo nó, mantendo a maioria das chaves em seus locais originais.</p><p id="d9158342-35c0-49fa-9fc7-95a6d3855083" class="">Quando você precisa armazenar ou recuperar dados em um sistema distribuído, o algoritmo de hash consistente pode ser usado para determinar qual nó ou servidor é responsável por esse armazenamento. Isso permite que o sistema localize rapidamente a localização correta dos dados, garantindo um acesso eficiente e balanceamento de carga.</p><p id="5af92b21-c84a-4be3-8be6-3796ea6eb262" class="">Além disso, à medida que novos nós são adicionados ou removidos da rede, o algoritmo de hash consistente também ajuda a minimizar as mudanças necessárias na distribuição de dados. A maioria das chaves permanecerá mapeada para os mesmos nós, proporcionando estabilidade no sistema.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">MPIs</summary><div class="indented"><p id="6c6ba92d-57ba-45aa-a678-b1b3dea58884" class="">Message Passing Interface (MPI) é um padrão de programação e uma biblioteca utilizada em computação paralela e distribuída para permitir a comunicação e a coordenação entre processos ou threads em um ambiente distribuído. Ele é amplamente usado em sistemas de alto desempenho, clusters de computadores, supercomputadores e em ambientes de computação distribuída.</p><p id="b704a0cb-820b-4799-9145-519b76b0f630" class="">A principal ideia por trás do MPI é permitir que os programas sejam divididos em várias partes independentes e executados em paralelo em diferentes processadores ou nós de um sistema distribuído. Esses programas paralelos precisam trocar informações e coordenar suas ações para realizar tarefas complexas de maneira eficiente. O MPI fornece as ferramentas necessárias para essa comunicação e coordenação.</p><p id="41bfbe72-77e9-4cd2-84f0-21b7900efd5f" class="">Aqui estão alguns conceitos-chave relacionados ao MPI:</p><ol type="1" id="78063437-398b-4c92-b330-12415cb9c12d" class="numbered-list" start="1"><li><strong>Comunicação</strong>: O MPI oferece um conjunto de funções para enviar e receber mensagens entre processos. Isso permite que os processos troquem dados e coordenem suas atividades. Existem operações de envio síncronas e assíncronas para atender a diferentes requisitos de comunicação.</li></ol><ol type="1" id="a7d689b1-ca6b-4161-875d-bcdfaf673888" class="numbered-list" start="2"><li><strong>Modelo de Passagem de Mensagens</strong>: O MPI segue um modelo de passagem de mensagens, o que significa que os processos se comunicam enviando e recebendo mensagens explícitas. Cada processo é identificado por um &quot;rank&quot; que o diferencia dos outros processos em uma comunicação.</li></ol><ol type="1" id="ae50be08-c44d-4baf-a2f3-d267d3b310f7" class="numbered-list" start="3"><li><strong>Comunicação Ponto a Ponto e Coletiva</strong>: O MPI suporta tanto comunicação ponto a ponto (entre dois processos) quanto comunicação coletiva (envolvendo vários processos). Comunicações coletivas incluem operações como broadcast, scatter, gather e reduce, que facilitam a comunicação entre grupos de processos.</li></ol><ol type="1" id="52d905ff-e558-45dc-8e10-87e5c94661cf" class="numbered-list" start="4"><li><strong>Tipos de Dados Personalizados</strong>: O MPI permite a definição de tipos de dados personalizados, o que é útil para enviar estruturas de dados complexas entre processos de maneira eficiente.</li></ol><ol type="1" id="75ac0609-aaf1-444c-b84e-f411cbb022d7" class="numbered-list" start="5"><li><strong>Comunicação Síncrona e Assíncrona</strong>: O MPI suporta tanto comunicação síncrona (bloqueante) quanto assíncrona (não bloqueante). Na comunicação síncrona, o processo remetente aguarda a confirmação da entrega da mensagem, enquanto na comunicação assíncrona, ele pode continuar sua execução sem esperar pela confirmação.</li></ol><ol type="1" id="1f06530c-2928-495b-b7eb-db9f12242734" class="numbered-list" start="6"><li><strong>Coordenação</strong>: Além da comunicação, o MPI fornece mecanismos para coordenar a execução de processos, como barreiras (que fazem com que os processos esperem até que todos alcancem um ponto específico) e sincronizações.</li></ol><ol type="1" id="b79be366-5fe3-4d7b-9fca-dde2193b61fe" class="numbered-list" start="7"><li><strong>Portabilidade</strong>: Uma vantagem significativa do MPI é sua portabilidade. Existem implementações do MPI disponíveis para várias plataformas e linguagens de programação, como C, C++, Fortran, Python e outras.</li></ol><ol type="1" id="ca0c718d-b37c-4b50-8418-66d9ccb3003b" class="numbered-list" start="8"><li><strong>Escalabilidade</strong>: O MPI é altamente escalável e pode ser usado em sistemas com um pequeno número de processos ou em supercomputadores com milhares de processadores.</li></ol><p id="2c2a8218-936c-4f1e-b8ab-5f718c75ab2f" class="">Em resumo, o MPI é uma biblioteca que permite que os programadores desenvolvam aplicativos paralelos e distribuídos, tirando proveito de sistemas de computação de alto desempenho. Ele fornece os meios para que os processos comuniquem, coordenem e compartilhem dados de maneira eficiente, tornando possível a execução paralela de tarefas complexas.</p><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Problema de Sincronização</summary><div class="indented"><p id="4f919780-e6fd-403a-8da3-b911bdf6ce0f" class=""><em>I - O problema dos generais bizantinos é uma metáfora que descreve a dificuldade de se entrar em um acordo quando entidades centralizadas decidem em nome da maioria - </em><mark class="highlight-red"><em>Falso</em></mark></p><p id="c00c5b4d-e76f-4717-a459-9347c52239b6" class=""><strong>Motivo:</strong> O problema dos generais bizantinos descreve a dificuldade da parte descentralizada chegar no consenso sem depender de uma parte central confiavel.</p><p id="9daf7cc5-dd1a-4ff9-8985-0a0bca57c1a1" class=""><em>II - A tecnologia blockchain é uma solução eficiente para o problema dos generais bizantinos - </em><mark class="highlight-teal"><em>Verdadeiro</em></mark></p><p id="4f31934f-288f-4c86-81cb-c23801d366ee" class=""><strong>Motivo: </strong>Uma blockchain é um sistema descentralizado sem uma autoridade central confiável que possa resolver esse problema.<em><br/>III - O algoritmo Paxos é uma solução de consenso distribuído cuja variante pode ser usada para coordenação e resolução de impasses em redes blockchain - <br/></em><mark class="highlight-teal"><em>Verdadeiro</em></mark></p><p id="0b55b811-ebdd-401e-b2c3-580d0fe1dd58" class=""><strong>Motivo: </strong>O objetivo principal do algoritmo Paxos é garantir que um grupo de processos distribuídos chegue a um consenso sobre um único valor, mesmo quando alguns dos processos falham ou há atrasos na comunicação entre eles</p></div></details></div></details></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

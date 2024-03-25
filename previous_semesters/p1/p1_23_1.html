@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Prova 1(2023-1)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8fa157a4-54df-4cea-8843-227e009384b6" class="page sans"><header><h1 class="page-title">Prova 1(2023-1)</h1><p class="page-description"></p></header><div class="page-body"><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">RDDs</summary><div class="indented"><ul id="4275b2d4-dc2c-4f08-9fce-c6b56daff753" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">RDDs (Resilient Distributed Datasets) são uma estrutura de dados fundamental em Apache Spark, um framework de processamento de big data. Os RDDs são uma abstração de dados distribuídos que fornecem uma maneira de representar e manipular dados de forma distribuída em um cluster de computadores.</mark></li></ul><ol type="1" id="756e804f-7cbf-41f5-86f2-48b9ee14b86a" class="numbered-list" start="1"><li>Resiliente (Resilient): O &quot;R&quot; em RDD refere-se à capacidade de recuperação de falhas. Os RDDs são capazes de recuperar automaticamente dados perdidos devido a falhas em nós do cluster. Isso é alcançado por meio de uma técnica chamada lineage, que mantém um registro das transformações aplicadas aos dados e pode recriar os dados perdidos a partir dessas transformações.</li></ol><ol type="1" id="fcecb7a5-0de9-4413-b5c2-66593a7aac13" class="numbered-list" start="2"><li>Distribuído (Distributed): Os RDDs são projetados para distribuir dados em várias máquinas em um cluster. Isso permite que o processamento de dados seja paralelizado e escalável horizontalmente, aproveitando a capacidade de várias máquinas em conjunto.</li></ol><ol type="1" id="8069f2bb-d32a-4bd1-9154-ce50625cd034" class="numbered-list" start="3"><li>Dataset (Conjunto de Dados): Um RDD é basicamente um conjunto de dados imutável, particionado em várias partes chamadas de partições. Cada partição pode ser processada de forma independente em um nó do cluster.</li></ol><ol type="1" id="a5c4102d-013e-4694-bee6-9ea6b0e43775" class="numbered-list" start="4"><li>Tolerante a falhas: Como mencionado anteriormente, os RDDs são resilientes a falhas, o que significa que, se um nó no cluster falhar, os dados podem ser recuperados e o processamento pode continuar em outro nó sem perda de dados.</li></ol><ol type="1" id="2383660d-ecca-4882-ace8-cc3bcaf0482f" class="numbered-list" start="5"><li>Transformações e Ações: Os RDDs suportam duas principais operações: transformações e ações. Transformações são operações que criam um novo RDD a partir de um RDD existente, como map, filter e reduce. As ações são operações que retornam resultados ou enviam dados de volta ao driver do Spark, como count e collect.</li></ol><ol type="1" id="da4c6449-fa40-45e3-9efd-e50b4221cc5a" class="numbered-list" start="6"><li>Imutabilidade: Os RDDs são imutáveis, o que significa que, uma vez criados, eles não podem ser alterados. Qualquer operação que pareça modificar um RDD na verdade cria um novo RDD.</li></ol><ol type="1" id="ad3c5655-3a10-4822-a18b-b5a4393f5702" class="numbered-list" start="7"><li>Lazy Evaluation: O Spark utiliza avaliação preguiçosa (lazy evaluation), o que significa que as transformações em um RDD não são executadas imediatamente. Em vez disso, as transformações são registradas e são executadas apenas quando uma ação é chamada. Isso permite que o Spark otimize o plano de execução.</li></ol><ul id="174e1b89-ccce-4684-892e-5dd2e5e7c944" class="bulleted-list"><li style="list-style-type:disc">Os RDDs foram a base do processamento de dados no Apache Spark, mas a partir da versão 2.0, o Spark introduziu o conceito de DataFrames e Datasets, que oferecem otimizações de desempenho e uma API mais rica para trabalhar com dados estruturados. No entanto, os RDDs ainda são úteis em cenários onde a estrutura dos dados não é bem definida ou quando é necessária uma manipulação de baixo nível dos dados.</li></ul><p id="1ebc33cf-58c6-4926-9f5f-177dedec8141" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Questão 1 </summary><div class="indented"><p id="38e8ff02-be5b-48fc-b638-0136e3904ff2" class="">I - RDDs (Resilient Distributed Datasets) são estruturas tipadas do Spark que podem ser alteradas por comandos python ou R - <mark class="highlight-red">Falso</mark></p><p id="1e492301-5648-4e53-9279-9643e91f0ff0" class="">Motivo : Os RDDs (Resilient Distributed Datasets) no Spark não são estruturas tipadas como DataFrames ou Datasets. Eles são uma abstração de dados distribuídos que podem conter qualquer tipo de objeto sou dados em suas partições. No entanto, os RDDs não são diretamente manipulados por comandos Python ou R, mas sim por operações e transformações fornecidas pelo Spark.</p><p id="75a2c2eb-87be-4614-82ab-9a0cdc278f14" class="">II - As transformações (Transformations) são implementadas no Spark em modo lazy, ou seja, são executadas posteriormente, apenas  quando é instanciado uma ação (Action), visando melhoria de performance - <mark class="highlight-teal">Verdadeiro</mark></p><p id="d59170c2-9a6b-4632-933b-3f6c37391b86" class="">Motivo : O Spark utiliza avaliação preguiçosa (lazy evaluation), o que significa que as transformações em um RDD não são executadas imediatamente. Em vez disso, as transformações são registradas e são executadas apenas quando uma ação é chamada. Isso permite que o Spark otimize o plano de execução. </p><p id="307fb88b-511a-42f1-a8b8-f8816502e5cb" class="">III - O Spark é mais rápido do que o Hadoop/Map-Reduce, porque os estágios de execução são implementados com uso intensivo de memória ao invés de uso de disco (memória secundária) -  <mark class="highlight-teal">Verdadeiro</mark></p><p id="40a7adc1-50df-4093-b354-53c56360cb62" class="">Motivo: O Spark é mais rápido que o Hadoop MapReduce devido à sua capacidade de processamento na memória, ao modelo de execução DAG e aos conjuntos de dados distribuídos resilientes (RDDs). A capacidade do Spark de processar dados na memória reduz a quantidade de tempo gasto em I/O de disco, o que resulta em tempos de processamento mais rápidos.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Replicação/Consistência</summary><div class="indented"><ul id="9dbe3f35-edd6-4c15-a5ef-9aecd1bd8bb4" class="bulleted-list"><li style="list-style-type:disc">A replicação de dados é uma técnica usada em sistemas distribuídos para criar cópias dos dados em vários servidores ou nós do sistema. A principal finalidade da replicação é melhorar a disponibilidade, escalabilidade e confiabilidade dos sistemas, permitindo que os dados estejam disponíveis mesmo em caso de falhas de hardware ou de rede. No entanto, a replicação também introduz desafios relacionados à consistência dos dados.</li></ul><ul id="4017e042-351f-4e9c-86e3-145dd85bf2e7" class="bulleted-list"><li style="list-style-type:disc">A replicação envolve a criação e manutenção de cópias dos dados em diferentes servidores ou nós.</li></ul><ul id="a677b5d8-0e27-4fa0-9cf4-2b7b177c6cc8" class="bulleted-list"><li style="list-style-type:disc">As réplicas podem ser distribuídas geograficamente para fornecer alta disponibilidade e reduzir a latência para os usuários em diferentes localizações.</li></ul><ul id="d35fe3ad-c302-4c5a-90a2-5a22d9b5487e" class="bulleted-list"><li style="list-style-type:disc">Cada cópia de dados é chamada de &quot;réplica&quot;, e um dos servidores é geralmente designado como &quot;nó mestre&quot; ou &quot;nó primário&quot;, enquanto os outros são &quot;nós de réplica&quot; ou &quot;nós secundários&quot;.</li></ul><ul id="daf010af-7a29-405a-8671-5def706f7df9" class="bulleted-list"><li style="list-style-type:disc">A consistência dos dados refere-se à garantia de que as diferentes cópias dos dados estejam sempre em um estado coerente e que todas as operações de leitura e gravação produzam resultados previsíveis e corretos.</li></ul><ul id="0f99f7c7-b20b-4c93-ac50-b70142f41bc1" class="bulleted-list"><li style="list-style-type:disc">A consistência é fundamental para garantir a integridade dos dados e evitar problemas como leituras de dados desatualizados (stale data) ou gravações conflitantes.</li></ul><p id="fa1f353e-4d7a-4a55-b456-6dcc92592b83" class="">→ Existem diferentes modelos de consistência que descrevem como as operações de leitura e gravação são percebidas pelos clientes em sistemas de replicação. Alguns exemplos incluem:</p><ul id="ea993ad5-c647-43c1-ba7a-ddada2386185" class="bulleted-list"><li style="list-style-type:disc">Consistência Forte: Garante que todas as operações de leitura sempre vejam os resultados mais recentes das operações de gravação.</li></ul><ul id="cf0252b9-b0c4-436e-9ec3-44a1b17d1f82" class="bulleted-list"><li style="list-style-type:disc">Consistência Causal: Garante que as operações sejam percebidas na ordem em que foram causadas logicamente.</li></ul><ul id="20f74ca6-db22-4afb-b24e-c39b52c6ed2b" class="bulleted-list"><li style="list-style-type:disc">Consistência Eventual: Garante que, em algum momento no futuro, todas as réplicas estarão em um estado consistente, mas não necessariamente imediatamente após uma gravação.</li></ul><ul id="06320b10-3968-4621-838d-27928c254ce4" class="bulleted-list"><li style="list-style-type:disc">Para manter a consistência dos dados, os sistemas de replicação geralmente utilizam protocolos específicos, como replicação síncrona ou assíncrona.</li></ul><ul id="00f00ae0-6475-42c9-80c5-2ea0fe4071e9" class="bulleted-list"><li style="list-style-type:disc">Na replicação síncrona, todas as operações de gravação só são consideradas concluídas após serem confirmadas por todas as réplicas, garantindo alta consistência.</li></ul><ul id="998eacdb-e79a-4063-8ea5-75267eba9cc3" class="bulleted-list"><li style="list-style-type:disc">Na replicação assíncrona, as operações de gravação são confirmadas no nó mestre e depois replicadas para os nós secundários, o que pode resultar em maior latência, mas pode oferecer maior escalabilidade e disponibilidade.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Questão 2</summary><div class="indented"><p id="96fb3c0e-d649-4cf5-a4ba-4771d9f6a072" class="">I - Replicação consiste na cópia da base de objetos (dados, código, etc) entre servidores ativos, sendo um deles o master e os demais, as réplicas. Nesse esquema, a replicação/consistência pode ser configurada de dois modos: (i) RW (leitura e escrita) onde master e réplicas aceitam atualizações dos clientes, e (ii) RO (leitura apenas), onde apenas a master aceita atualizações dos objetos através das requisições feitas pelos clientes - <mark class="highlight-teal">Verdadeiro</mark></p><p id="e45b0bba-7786-4d60-bbe6-fca887281450" class="">Motivo: RW - Master e Réplicas aceitam atualizações do cliente, RO - Só master aceita atualização do cliente</p><p id="53adaa67-6a09-4afd-8e8a-89574bd93c46" class="">II - Na replicação síncrona todas as mudanças são feitas no instante da sincronização e a alteração é imediatamente aplicada a todos os outros servidores dentro da transação, inexistindo problemas de consistência - <mark class="highlight-red">Falso</mark></p><p id="cdbc6d7f-a8a4-4d8c-8f4b-ad8bb8ac366a" class="">Motivo - A alteração não é imediata, é feita pelo nó mestre  e replicas paralelamente gerando alta Consistência, mas ainda sim pode ocorrer erros de consistência</p><p id="dd7a5e0e-fc25-409a-96df-43c47e1a807d" class="">III - Na replicação assíncrona, se um objeto é alterado, essa modificação é propagada para as réplicas em uma segunda etapa, fazendo com que a master e as réplicas fiquem diferentes durante um determinado intervalo de tempo - <mark class="highlight-teal">Verdadeiro</mark></p><p id="7fa7e46e-c7c6-4537-9155-6ba42caa6f68" class="">Motivo: Realmente a forma assíncrona é hierarquica, primeiro o nó mestre e depois as réplicas, isso gera latência, mas maior escalabilidade e disponibilidade.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Solução de Lamport</summary><div class="indented"><p id="6374aec3-0aa2-4365-9a48-f1c673cdc9da" class="">A solução de Lamport refere-se a um método proposto por Leslie Lamport, um renomado cientista da computação, para resolver o problema da ordenação de eventos em sistemas distribuídos. Esse problema, conhecido como &quot;clock lógico de Lamport&quot; ou &quot;relógio de Lamport&quot;, é fundamental em sistemas distribuídos para garantir a consistência e a ordenação adequada de eventos que ocorrem em diferentes nós ou processos.</p><p id="f5b5bbc2-8675-40d4-a1bb-2537d5722712" class="">O problema que a solução de Lamport visa resolver é o seguinte: em um sistema distribuído, onde eventos podem ocorrer de forma concorrente em vários nós, como determinar a ordem precisa em que esses eventos ocorreram globalmente? Em sistemas distribuídos, não há um relógio global único que possa ser usado para registrar a ordem dos eventos.</p><p id="cc7b9b88-24c4-4a3c-8a7c-74662ad32448" class="">A solução de Lamport aborda esse problema introduzindo relógios lógicos, também conhecidos como &quot;carimbos de tempo lógicos&quot;, associados a cada evento em cada nó do sistema. Os relógios lógicos de Lamport não são relógios no sentido tradicional, mas sim números inteiros que são atribuídos a eventos.</p><p id="601a84a9-f21f-4b04-a733-e257eadb5564" class="">A ideia fundamental por trás da solução de Lamport é a seguinte:</p><ol type="1" id="99ae7ba6-6c45-4436-b48f-e0e823741167" class="numbered-list" start="1"><li>Cada nó ou processo atribui um carimbo de tempo lógico (um número inteiro) a cada evento que ele cria. O carimbo de tempo é local e monotonamente crescente.</li></ol><ol type="1" id="aa5d256b-c0e3-4c4a-88e6-f549dc071939" class="numbered-list" start="2"><li>Quando um evento é enviado de um nó para outro, o carimbo de tempo do evento é incluído na mensagem.</li></ol><ol type="1" id="54291bb1-1808-48b7-8e4d-6eb27591f989" class="numbered-list" start="3"><li>Quando um nó recebe uma mensagem, ele compara o carimbo de tempo da mensagem com o seu próprio carimbo de tempo local. Ele ajusta seu carimbo de tempo local para ser maior do que o carimbo de tempo da mensagem, refletindo que ele observou esse evento.</li></ol><p id="5bf4273e-65d7-45e4-ac9e-2187db5a82b0" class="">Esses carimbos de tempo lógicos permitem que os eventos sejam parcialmente ordenados. Embora os carimbos de tempo lógicos não forneçam uma ordenação absoluta, eles garantem que eventos causais (aqueles que têm uma relação causal) serão ordenados corretamente. Isso é conhecido como &quot;ordem parcial&quot; ou &quot;ordem causal&quot;.</p><p id="f15f2cb2-d8ae-4581-b8d0-d565e4866705" class="">A solução de Lamport é uma abordagem simples e elegante para a ordenação de eventos em sistemas distribuídos e é frequentemente usada como base para a implementação de algoritmos mais avançados de ordenação de eventos, como o relógio vetorial de Leslie Lamport, que estende os conceitos do relógio lógico de Lamport para fornecer uma ordenação mais precisa em sistemas distribuídos complexos.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Questão 3</summary><div class="indented"><p id="adc94624-cf22-4d5d-9269-6b49ee79d731" class="">I - A solução de Lamport permite o ajuste de ticks de relógio entre processos para garantir a sequencialidade temporal das ações (&quot;A happens before B&quot;, onde A e B são eventos típicos em um sistema distribuído como o envio de uma mensagem ou um processamento) - <mark class="highlight-teal">Verdadeiro</mark></p><p id="672db79d-d824-48ad-b8f9-94c134430807" class="">Motivo:  Sim, a solução de Lamport, que envolve o uso de relógios lógicos de Lamport, permite o ajuste de &quot;ticks&quot; de relógio entre processos em um sistema distribuído para garantir a sequencialidade temporal das ações. Esse conceito está relacionado à ideia de &quot;A acontece antes de B&quot;, onde A e B são eventos no sistema distribuído. Nos relógios lógicos de Lamport, cada processo atribui um carimbo de tempo lógico (um número inteiro) a cada evento que ele cria. Quando um evento é enviado de um processo para outro (por exemplo, uma mensagem é enviada), o carimbo de tempo do evento é incluído na mensagem. Quando o receptor recebe a mensagem, ele compara o carimbo de tempo da mensagem com seu próprio carimbo de tempo local e ajusta seu carimbo de tempo local para ser maior do que o carimbo de tempo da mensagem.</p><p id="e4ad2aed-0f45-4232-b597-fe2c6b71f2be" class="">II - Relógios físicos são uma solução interessante para garantir o sincronismo de sistemas distribuídos, especialmente quando os processos A e B comunicantes residem em hosts distintos - <mark class="highlight-red">Falso</mark></p><p id="9e9363f6-53b8-4f26-881f-641c71149d71" class="">Motivo: Hosts distintos e relógios físicos não são ideias congruentes </p><p id="fefb9c9f-b8d0-4e04-af24-8bfdfd37e742" class="">III - Relógios lógicos fazem parte de um tipo de solução no qual os processos comunicantes consigam manter um relógio global único - <mark class="highlight-red">Falso</mark></p><p id="6a7bd780-7450-45b0-8035-4b26323cb8a1" class="">Motivo: Os relógios lógicos não criam um &quot;relógio global único&quot; no sentido tradicional, como um relógio de parede que mostra a hora atual em todos os sistemas distribuídos. Em vez disso, eles fornecem uma ordem parcial ou parcialmente ordenada de eventos que reflete relações causais entre esses eventos.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">MPIs</summary><div class="indented"><p id="0214f373-57b1-47ef-bf4d-07cd2774c48e" class="">Message Passing Interface (MPI) é um padrão de programação e uma biblioteca utilizada em computação paralela e distribuída para permitir a comunicação e a coordenação entre processos ou threads em um ambiente distribuído. Ele é amplamente usado em sistemas de alto desempenho, clusters de computadores, supercomputadores e em ambientes de computação distribuída.</p><p id="169b5815-5d85-45a5-a721-c0dd64b57bab" class="">A principal ideia por trás do MPI é permitir que os programas sejam divididos em várias partes independentes e executados em paralelo em diferentes processadores ou nós de um sistema distribuído. Esses programas paralelos precisam trocar informações e coordenar suas ações para realizar tarefas complexas de maneira eficiente. O MPI fornece as ferramentas necessárias para essa comunicação e coordenação.</p><p id="49e6140c-28fa-48c1-b958-d33a3e48623a" class="">Aqui estão alguns conceitos-chave relacionados ao MPI:</p><ol type="1" id="02ac8da6-101b-46a7-ba3e-05adc2448de7" class="numbered-list" start="1"><li><strong>Comunicação</strong>: O MPI oferece um conjunto de funções para enviar e receber mensagens entre processos. Isso permite que os processos troquem dados e coordenem suas atividades. Existem operações de envio síncronas e assíncronas para atender a diferentes requisitos de comunicação.</li></ol><ol type="1" id="1b93299e-d39e-4570-a0f5-2490d7c351d7" class="numbered-list" start="2"><li><strong>Modelo de Passagem de Mensagens</strong>: O MPI segue um modelo de passagem de mensagens, o que significa que os processos se comunicam enviando e recebendo mensagens explícitas. Cada processo é identificado por um &quot;rank&quot; que o diferencia dos outros processos em uma comunicação.</li></ol><ol type="1" id="c7b835cb-1bf7-4055-96c4-9ae86122f2e9" class="numbered-list" start="3"><li><strong>Comunicação Ponto a Ponto e Coletiva</strong>: O MPI suporta tanto comunicação ponto a ponto (entre dois processos) quanto comunicação coletiva (envolvendo vários processos). Comunicações coletivas incluem operações como broadcast, scatter, gather e reduce, que facilitam a comunicação entre grupos de processos.</li></ol><ol type="1" id="8b79481a-503e-4c20-9a85-ab1a65b0e4b4" class="numbered-list" start="4"><li><strong>Tipos de Dados Personalizados</strong>: O MPI permite a definição de tipos de dados personalizados, o que é útil para enviar estruturas de dados complexas entre processos de maneira eficiente.</li></ol><ol type="1" id="de755d84-8015-42a1-8602-ad3dd9f5eb08" class="numbered-list" start="5"><li><strong>Comunicação Síncrona e Assíncrona</strong>: O MPI suporta tanto comunicação síncrona (bloqueante) quanto assíncrona (não bloqueante). Na comunicação síncrona, o processo remetente aguarda a confirmação da entrega da mensagem, enquanto na comunicação assíncrona, ele pode continuar sua execução sem esperar pela confirmação.</li></ol><ol type="1" id="6daeae63-d5a4-475c-a65d-bdb66fd78f6c" class="numbered-list" start="6"><li><strong>Coordenação</strong>: Além da comunicação, o MPI fornece mecanismos para coordenar a execução de processos, como barreiras (que fazem com que os processos esperem até que todos alcancem um ponto específico) e sincronizações.</li></ol><ol type="1" id="fe44fa4d-1d23-4f62-89eb-39dcff4d45ee" class="numbered-list" start="7"><li><strong>Portabilidade</strong>: Uma vantagem significativa do MPI é sua portabilidade. Existem implementações do MPI disponíveis para várias plataformas e linguagens de programação, como C, C++, Fortran, Python e outras.</li></ol><ol type="1" id="70fba61a-0765-4fb2-8420-752480b39ad2" class="numbered-list" start="8"><li><strong>Escalabilidade</strong>: O MPI é altamente escalável e pode ser usado em sistemas com um pequeno número de processos ou em supercomputadores com milhares de processadores.</li></ol><p id="b65daacd-6599-4112-920d-913349178c97" class="">Em resumo, o MPI é uma biblioteca que permite que os programadores desenvolvam aplicativos paralelos e distribuídos, tirando proveito de sistemas de computação de alto desempenho. Ele fornece os meios para que os processos comuniquem, coordenem e compartilhem dados de maneira eficiente, tornando possível a execução paralela de tarefas complexas.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Questão 5</summary><div class="indented"><p id="c67f6ed9-96c5-4ce3-9ea7-ac70c2071d56" class="">I - Sockets UDP, por serem não orientados à conexão, permitem a comunicação persistente entre processos cliente e servidor - <mark class="highlight-red">Falso</mark></p><p id="d6c28ea1-b9b0-4c59-98e6-c656af5d0627" class="">Motivo: Sockets UDP (User Datagram Protocol) são um protocolo de transporte em redes de computadores que não são orientados à conexão. Eles são projetados para comunicações rápidas e eficientes, mas não fornecem garantias de comunicação persistente ou confiável entre processos cliente e servidor.</p><p id="13b166dc-350a-421f-a806-1aaeff4a1454" class="">II - Sincronicidade é uma das funcionalidades atendidas pela biblioteca MPI, uma vez que esta garante a entrega da mensagem no receptor, mesmo que o processo destinatário não esteja executando - <mark class="highlight-red">Falso</mark></p><p id="e0db5438-6752-46c8-a5a2-a1701332e2fb" class="">Motivo: A MPI só faz duas formas de envio que é sincrono e assincrono e em ambas é preciso que o processo que recebe esteja de pé</p><p id="fc22599c-f527-4f2e-b155-045d6e64538a" class="">III - Brokers como Kafka e RabbitMQ são interessantes para viabilizar comunicação persistente entre processos - <mark class="highlight-teal">Verdadeiro</mark></p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">MapReduce</summary><div class="indented"><p id="5b87e4af-66e4-49e9-af5d-95710c64d18a" class="">O MapReduce é um modelo de programação e um paradigma de processamento de dados utilizado para realizar operações de processamento distribuído em grandes conjuntos de dados em clusters de computadores. Foi originalmente desenvolvido pelo Google e posteriormente popularizado e implementado no Hadoop, um ecossistema de código aberto amplamente utilizado para big data.</p><p id="4eacc6c3-7eee-4b59-a659-6ee9a1b6b3d4" class="">O modelo MapReduce é composto por duas principais etapas:</p><ol type="1" id="6f19499b-7a98-4b27-9c84-5021f4d3b164" class="numbered-list" start="1"><li><strong>Map (Mapeamento)</strong>: Nesta fase, os dados de entrada são divididos em partes menores chamadas de &quot;splits&quot;. Cada split é então processado independentemente por várias tarefas de mapeamento (funções Map). A função Map recebe um conjunto de dados e gera pares chave-valor intermediários como saída. O objetivo do mapeamento é filtrar, classificar e transformar os dados de entrada em um formato mais adequado para a próxima fase.</li></ol><ol type="1" id="9aa8cd02-6786-4555-a954-9a24aa098307" class="numbered-list" start="2"><li><strong>Shuffle e Sort (Embaralhamento e Ordenação)</strong>: Após a fase de mapeamento, os pares chave-valor intermediários gerados por todas as tarefas de mapeamento precisam ser agrupados, ordenados e redistribuídos para as tarefas de redução. Isso envolve a etapa de embaralhamento e ordenação, que garante que todos os valores associados a uma mesma chave sejam enviados para a mesma tarefa de redução.</li></ol><ol type="1" id="0a75635b-9d89-458e-a993-c73c1e9c31db" class="numbered-list" start="3"><li><strong>Reduce (Redução)</strong>: Nesta fase, os dados agrupados e ordenados são processados por funções de redução (funções Reduce). Cada função de redução recebe um conjunto de pares chave-valor que compartilham a mesma chave. O objetivo da função de redução é realizar operações de agregação, resumo ou qualquer processamento adicional necessário nos dados agrupados. O resultado final de cada função de redução é geralmente uma saída agregada ou um subconjunto dos dados processados.</li></ol><p id="209052c7-e9dd-495e-b643-94c8230bff18" class="">O MapReduce oferece várias vantagens:</p><ul id="b02ba33e-937e-450b-a5b3-f743d62ff78f" class="bulleted-list"><li style="list-style-type:disc"><strong>Escalabilidade</strong>: Pode ser usado em clusters de computadores de grande escala para lidar com conjuntos de dados massivos.</li></ul><ul id="9ea2d06c-2889-4b56-a8b1-a96245683924" class="bulleted-list"><li style="list-style-type:disc"><strong>Tolerância a falhas</strong>: O modelo MapReduce é projetado para ser resiliente a falhas. Se um nó do cluster falhar, o framework redistribui automaticamente as tarefas para outros nós.</li></ul><ul id="f539db6f-7790-4936-8895-b82931647ff7" class="bulleted-list"><li style="list-style-type:disc"><strong>Programação simplificada</strong>: O programador não precisa se preocupar com detalhes de paralelismo, sincronização ou distribuição de dados. O modelo MapReduce cuida disso.</li></ul><ul id="55b7133f-a59e-4786-bd3d-4c19cd315cd6" class="bulleted-list"><li style="list-style-type:disc"><strong>Flexibilidade</strong>: Pode ser aplicado a uma ampla gama de problemas, desde processamento de logs até análise de dados complexa.</li></ul><p id="6cc7d11d-67fb-499f-a226-117c85e3beae" class="">No entanto, o MapReduce tem algumas limitações, como a necessidade de escrita de código em um estilo específico de mapeamento e redução e o fato de ser mais adequado para cargas de trabalho de processamento em lote em vez de consultas interativas em tempo real.</p><p id="4c78da75-5773-457c-957a-4bf5b57b00cd" class="">Apesar dessas limitações, o MapReduce e o ecossistema Hadoop continuam sendo ferramentas valiosas para processamento de big data em muitas organizações, e muitas vezes são combinados com outras tecnologias, como o Apache Spark, para abordar as necessidades de análise de dados em tempo real.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Questão 6</summary><div class="indented"><p id="4510a47f-cac5-4568-9711-3efa555a7080" class="">I - Em programas concebidos de acordo com o paradigma Map/Reduce, cabe ao programador a tarefa de distribuir os serviços entre os nós do cluster. - <strong><mark class="highlight-red">Falso</mark></strong></p><ul id="a177ad70-0b82-4ff1-a048-09be052d4e67" class="bulleted-list"><li style="list-style-type:disc">Esta afirmação é incorreta. No paradigma Map/Reduce, a distribuição de tarefas entre os nós do cluster é gerenciada pelo próprio framework MapReduce, como o Apache Hadoop. O programador especifica as funções Map e Reduce e o framework é responsável pela distribuição das tarefas e pelo paralelismo.</li></ul><p id="f3c89b36-c836-4ac5-8109-7d44d900118e" class="">II - No paradigma Map/Reduce os dados a serem processados são enviados onde os códigos Map e Reduce estão instalados, a fim de promover a melhora de desempenho e o paralelismo desejado. - <strong><mark class="highlight-red">Falso</mark></strong></p><ul id="bfb9f033-9951-4b81-b221-b46eb30dfc62" class="bulleted-list"><li style="list-style-type:disc">Esta afirmação é incorreta. No paradigma Map/Reduce, os dados <strong>não </strong>são enviados para onde os códigos Map e Reduce estão instalados. Em vez disso, os dados são divididos em partes e distribuídos pelos nós do cluster. Os códigos Map e Reduce são enviados para os nós onde os dados estão armazenados, permitindo o processamento paralelo dos dados nos próprios nós.</li></ul><p id="9d6a783a-4923-49de-9b1d-53a9eadaab4e" class="">III - Uma das desvantagens das infraestruturas que fazem uso do Map/Reduce com HDFS é o grande consumo de tempo com operações de I/O em discos (memória secundária). - <strong><mark class="highlight-teal">Verdadeiro</mark></strong></p><ul id="a53e548d-fa50-46cc-a6db-6123d64c76d1" class="bulleted-list"><li style="list-style-type:disc">Esta afirmação é correta. Uma das desvantagens do uso do paradigma Map/Reduce com o Hadoop Distributed File System (HDFS) é que as operações de leitura e gravação em disco (memória secundária) podem consumir tempo significativo, especialmente em cargas de trabalho que envolvem muitas operações de I/O. Isso ocorre porque os dados são frequentemente armazenados em disco e lidos de disco para processamento, o que pode resultar em latência de I/O.</li></ul></div></details><p id="31a0ddd3-4ee3-414f-88d5-0a936e70abdf" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

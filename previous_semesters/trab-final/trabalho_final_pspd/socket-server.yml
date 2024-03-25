@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: socket-server
+spec:
+  template:
+    metadata:
+      name: socket-server-pod
+    spec:
+      containers:
+      - name: socket-server
+        image: docker.io/trab/socket-server:latest
+        imagePullPolicy: Never
+        ports: 
+        - containerPort: 8080
+      restartPolicy: OnFailure

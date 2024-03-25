@@ -1,0 +1,3 @@
+mpirun -hostname cmx -mp 3 ./ex01.exe
+mpirun -host cmx -mp 3 ./ex01.exe
+hostname

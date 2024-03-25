@@ -1,0 +1,96 @@
+PROVA PSPD
+
+fazer apostila de rpc - fazer exemplos / exercicios
+	passagem de parametros
+	xdr
+	
+	estudar objetos distribuidos em rpc apenas teoria
+	estudar sockets e saber comparar com rpc
+	sincronização: estudar os relogios
+	relógio de lamport (lógico)
+	semaforos (exemplo na aula)
+	hadoop
+	spark streaming, rdd, dataframes
+	mpi
+
+
+CONCEITOS
+
+	- Sistemas Distribuídos têm as mesmas funções de um SO tradicional 
+	- Vantagens dos Sistemas Distribuídos 
+		- Economia
+		- Velocidade de processamento
+		- Distribuição inerente
+ 		- Confiabilidade
+		- Escalabilidade 
+		
+	- Desvantagens dos Sistemas Distribuídos 
+		- Maior complexidade 
+		- Dependência da tecnologia de rede 
+		- Segurança das informações
+		
+	- Objetivos dos Sistemas Distribuídos 
+		- Conectar usuários e recursos
+		- Transparência 
+		- Ser um sistema aberto
+			- Interoperabilidade: Componentes de diferentes fabricantes conversam entre si
+			- Portabilidade: Aplicações desenvolvida para um SD A devem executar, sem modificação, num SD B
+			- Flexibilidade: Fácil de configurar, Extensibilidade 
+		
+	- Middleware
+		- O sistema operacional de rede gerencia os recursos locais
+		- O middleware esconde a heterogeneidade
+		- O middleware fornece serviços às aplicações
+			- Facilidades de comunicação (RPC, RMI)
+			- Segurança 
+			
+	- Arquitetura em três camadas: interface, application server, datbase server	
+	
+	- IDF - arquivo de definição de interface
+	- comunicação persistente e sincrona - nao espera retorno para continuar
+	- comunicação persistente e asincrona - espera retorno para continuar
+	- sockets não sabem distinguir tipos de dados ou passar dados complexos, mpi sim
+	- oq resolve a persistencia: brokers como o kafka e rabbitMQ
+		- os brokers possuem filas de mensagens que fazem com que os senders e receivers nao precisem esta sempre trabalhando muito menos simultaneamente
+		- kafka tem topicos que sao particionados com offsets
+	- sincronização exige que os relógios de ambas as máquinas envolvidas na comunicação estejam no mesmo horário
+		- Relógio Físico: real, tempo da terra, segundos
+			- serviçco de sincronização de relogios fisicos mais utilizados: NTP (network time protocol)
+		- Relógio Lógico: não importa com o horário real, apenas garante a ordem das mensagens
+			- o tempo do q recebe é sempre maior do q envia
+			- ex: envia no 48 e recebe no 49
+			- esse é o Relógio dde Lamport! 
+	- semaforos tb servem para manter a sincronização
+	
+	- hadoop
+		- os arquivos sao particionados com o hdfs e replicados nos data nodes, assim como no kafka
+		- tudo é guardado em disco e dependendo do problema se torna overhead
+	
+	- RPC
+		- paradigma de comunicação de serviços de alto nível
+		- uso de protocolos de transmissão de baixo nivel (TCP/UDP)
+		- comunicação cliente servidor
+		- protocolo eXternal Data Representation (XDR) - IDL
+			- padronização da representação dos dados
+			- conversão de parametros e resultados (stubs)
+		- usa port mapper p localizar as portas dos serviços
+		
+	- gRPC
+		- open source, feito pela google
+		- comunicação cliente servidor
+		- IDL: 
+		- transporte: HTTP/2
+		- usado para microserviços, stream de telemetria de dados, stream de config de redes
+		- Funcionalidades:
+			- chamada de procedimento remoto em lote
+			- chamada de procedimento em broadcast
+			- procedimentos de callback
+			- multiplos requests (graças ao http/2) em 1 conexao tcp
+			- sincronismo e assincronismo e persistencia na comunicação - http/2
+		
+	
+	
+	
+	
+	
+	
