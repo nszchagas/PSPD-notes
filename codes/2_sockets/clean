@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for x in */*; do 
+    new=$(echo "$x" | tr ' ' '_' | tr '[:upper:]' '[:lower:]'); 
+    echo "Moving $x $new"
+    mv "$x" $new
+done
+
+

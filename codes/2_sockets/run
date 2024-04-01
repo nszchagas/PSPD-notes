@@ -1,0 +1,34 @@
+#!/bin/bash
+
+ip=$(hostname -I | awk -F ' ' '{print $1}')
+port=$(python -c 'import socket; s=socket.socket(); s.bind(("", 0)); print(s.getsockname()[1]); s.close()')
+
+
+ip_prof=10.10.71.233
+port_prof=5000
+
+function udp() {
+    
+    ## Client
+    gcc udp/cliente_udp.c -o client
+    
+    ## Server
+    gcc udp/server_udp.c -o server
+    
+    ## Rodando server
+    
+    ./server $ip $port
+    
+    ## Enviando msg
+    
+    ./client $ip $port param1 param2 param3
+}
+
+
+function tcp_1(){
+    
+    gcc tcp_1/tcpclient.c -o client.o
+    gcc tcp_1/tcpserver.c -o server.o
+}
+
+tcp_1
