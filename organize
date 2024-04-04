@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tree previous_semesters -fi --noreport > files 
+mkdir -p material
+for x in $(grep '.pdf' -o files); do mv "$x" "material/$x"; done
+
