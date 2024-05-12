@@ -1,0 +1,384 @@
+previous_semesters
+previous_semesters/2
+previous_semesters/2/kafka_counter.ipynb
+previous_semesters/2/producer.py
+previous_semesters/2/readme.md
+previous_semesters/2/words.txt
+previous_semesters/aprender
+previous_semesters/aprender/1_pspd_clusters.pdf
+previous_semesters/aprender/2_pspd_hadoop.pdf
+previous_semesters/aprender/apostila_mpi.pdf
+previous_semesters/aprender/hadoop_spark_chochocino_apresentacao.pdf
+previous_semesters/aprender/lab_rpc.pdf
+previous_semesters/aprender/lab_rpc_respostas
+previous_semesters/aprender/lab_rpc_respostas/somalista
+previous_semesters/aprender/lab_rpc_respostas/somalista/loc_somalista.c
+previous_semesters/aprender/lab_rpc_respostas/somalista/somalista_client.c
+previous_semesters/aprender/lab_rpc_respostas/somalista/somalista_server.c
+previous_semesters/aprender/lab_rpc_respostas/somalista/somalista.x
+previous_semesters/aprender/lab_rpc_respostas/somavet
+previous_semesters/aprender/lab_rpc_respostas/somavet/loc_somavet.c
+previous_semesters/aprender/lab_rpc_respostas/somavet/somavet_client.c
+previous_semesters/aprender/lab_rpc_respostas/somavet/somavet_server.c
+previous_semesters/aprender/lab_rpc_respostas/somavet/somavet.x
+previous_semesters/aprender/lab_spark_kafka_kibana.pdf
+previous_semesters/aprender/lab_spark_kafka.pdf
+previous_semesters/aprender/learning_spark_lightning-fast_big_data_analysis.pdf
+previous_semesters/aprender/pspd2023_1_lab1.pdf
+previous_semesters/aprender/pspd_sistemas_mensageria.pdf
+previous_semesters/aprender/pspd_visaogeral_comunicacao_em_sds.pdf
+previous_semesters/aprender/sd_com_rpc.pdf
+previous_semesters/aprender/sd_sincronizacao.pdf
+previous_semesters/aprender/semaforo_v0.c
+previous_semesters/aprender/semaforo_v1.c
+previous_semesters/aprender/semaforo_v2.c
+previous_semesters/aprender/semaforo_v3.c
+previous_semesters/aprender/somalista
+previous_semesters/aprender/somalista/loc_somalista.c
+previous_semesters/aprender/somalista/somalista.x
+previous_semesters/aprender/somavet
+previous_semesters/aprender/somavet/loc_somavet.c
+previous_semesters/aprender/somavet/somavet.x
+previous_semesters/aprender/tcc1_guilherme.pdf
+previous_semesters/bubblesort-parallel.c
+previous_semesters/caderno.pdf
+previous_semesters/cpus_e_gpus___pspd.pdf
+previous_semesters/estudo-mpi
+previous_semesters/estudo-mpi-prova2.c
+previous_semesters/fractal_tutorial_cuda_omp-20230626t170557z-001
+previous_semesters/fractal_tutorial_cuda_omp-20230626t170557z-001/fractal_tutorial_cuda_omp
+previous_semesters/fractal_tutorial_cuda_omp-20230626t170557z-001/fractal_tutorial_cuda_omp/fractal.cu
+previous_semesters/fractal_tutorial_cuda_omp-20230626t170557z-001/fractal_tutorial_cuda_omp/fractal_mpi_omp.cu
+previous_semesters/fractal_tutorial_cuda_omp-20230626t170557z-001/fractal_tutorial_cuda_omp/README.md
+previous_semesters/fractal_tutorial_cuda_omp-20230626t170557z-001/out_julia_normal_cuda.bmp
+previous_semesters/fractal_tutorial_cuda_omp-20230626t170557z-001/out_julia_normal_mpi_omp_cuda.bmp
+previous_semesters/idl-grpc.c
+previous_semesters/lab1
+previous_semesters/lab1/contador_amigos
+previous_semesters/lab1/contador_amigos/amigos.txt
+previous_semesters/lab1/contador_amigos/mapper.py
+previous_semesters/lab1/contador_amigos/reducer.py
+previous_semesters/lab1/contador_palavras
+previous_semesters/lab1/contador_palavras/mapper.py
+previous_semesters/lab1/contador_palavras/palavras.txt
+previous_semesters/lab1/contador_palavras/reducer.py
+previous_semesters/lab1/readme.md
+previous_semesters/lab_kafka_180025601_180052845.ipynb
+previous_semesters/lab_kafka_180052845-copy1.ipynb
+previous_semesters/Lab MPI
+previous_semesters/Lab MPI/a.out
+previous_semesters/Lab MPI/ciclo_hosts_mpi.c
+previous_semesters/Lab MPI/Lab MPI
+previous_semesters/Lab MPI/Lab MPI/ciclo
+previous_semesters/Lab MPI/Lab MPI/ciclo_hosts_mpi.c
+previous_semesters/Lab MPI/Lab MPI/soma_matrizes_mpi.c
+previous_semesters/Lab MPI/Lab_MPI.pdf
+previous_semesters/Lab MPI/mpi-imprime
+previous_semesters/Lab MPI/mpi-imprime-vetor.c
+previous_semesters/Lab MPI/soma_matrizes_mpi.c
+previous_semesters/lab_mpi_180074741_180078640
+previous_semesters/lab_mpi_180074741_180078640/01.c
+previous_semesters/lab_mpi_180074741_180078640/02.c
+previous_semesters/lab_mpi_fractais
+previous_semesters/lab_mpi_fractais/fractal.c
+previous_semesters/lab_mpi_fractais/fractalmpiserial.c
+previous_semesters/lab_mpi_fractais/lab_pspd_mpi.pdf
+previous_semesters/lab_mpi_fractais/out_julia_normal.bmp
+previous_semesters/lab_spark_kafka.pdf
+previous_semesters/mpi_commands.txt
+previous_semesters/mpi-revisao-pspd.c
+previous_semesters/mpi_soma_vetores.c
+previous_semesters/mpi-vetor
+previous_semesters/mpi-vetor.c
+previous_semesters/p1
+previous_semesters/p1/estudos-lucas.docx
+previous_semesters/p1/estudos.pdf
+previous_semesters/p1/p1_22_2.html
+previous_semesters/p1/p1_23_1.html
+previous_semesters/p1/p1_(30_10_2023)__revisão_da_tentativa.pdf
+previous_semesters/p1/p1_resumo.html
+previous_semesters/p1/prova_1(2022-2)_3d3d9ea59ec4459b9fbdb29f28b2cf56.html
+previous_semesters/p1/prova_1(2023-1)_8fa157a454df4cea8843227e009384b6.html
+previous_semesters/p1/prova1_individual__revisão_da_tentativa.pdf
+previous_semesters/p1/pspd_projeto_p1.docx
+previous_semesters/p1/resumo_p1_cd62ae68b1174ee0933aabadf2d288dc.html
+previous_semesters/p1_2022.1.pdf
+previous_semesters/p1_pspd_2023.1.pdf
+previous_semesters/p1_pspd.rar
+previous_semesters/p2
+previous_semesters/p2/p2_(20_11)__revisão_da_tentativa.pdf
+previous_semesters/p2/p2-resumo.docx
+previous_semesters/p2_pspd_2023.1.pdf
+previous_semesters/p3
+previous_semesters/p3/p3_(11_12)__revisão_da_tentativa.pdf
+previous_semesters/Prova\ individual_\ Revis+\372o\ da\ tentativa.pdf
+previous_semesters/prova.txt
+previous_semesters/pspd-2023.1-master
+previous_semesters/pspd-2023.1-master/gpu
+previous_semesters/pspd-2023.1-master/gpu/cuda
+previous_semesters/pspd-2023.1-master/gpu/cuda/hello
+previous_semesters/pspd-2023.1-master/gpu/cuda/hello.cu
+previous_semesters/pspd-2023.1-master/gpu/cuda/helloWorld.c
+previous_semesters/pspd-2023.1-master/gpu/cuda/teste
+previous_semesters/pspd-2023.1-master/gpu/cuda/teste.cu
+previous_semesters/pspd-2023.1-master/gpu/cuda/vector_add
+previous_semesters/pspd-2023.1-master/gpu/cuda/vector_add_thread2.cu
+previous_semesters/pspd-2023.1-master/gpu/cuda/vector_add_thread2.cu.save
+previous_semesters/pspd-2023.1-master/gpu/cuda/vector_add_thread.cu
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/CUDA
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/CUDA/fractalcuda
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/CUDA/fractalcuda.cu
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/CUDA/out_julia_normal_cu.bmp
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OMP
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OMP/fractalomp
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OMP/fractalomp.c
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OMP/out_julia_normal.bmp
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OpenCL
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OpenCL/fractal.cl
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OpenCL/fractalopencl
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OpenCL/fractalopenCL.c
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/codigos/OpenCL/out_julia_normal_openCL.bmp
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/docs
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/docs/Apresentacao_OMP-CUDA-OPENCL.pdf
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/docs/Relatorio_OMP-CUDA-OPENCL.pdf
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 01/PSPD_LAB_OMP_CUDA_OPENCL-1.pdf
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/CUDA
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/CUDA/cuda
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/CUDA/jogodavida.cu
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/CUDA+OMP
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/CUDA+OMP/cudaOMP
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/CUDA+OMP/jogodavidadp.cu
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/MPI
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/MPI/jogodavida
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/MPI/jogodavidampi.c
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OMP
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OMP/jogodavidaomp.c
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OMP/omp
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OPENCL
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OPENCL/jogodavidaocl.c
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OPENCL/kernel.cl
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OPENCL/opencl
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/codigos/OPENCL/vida
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/docs
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/docs/Apresentacao_lab_ojogo_da_vida.pdf
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/docs/Relatorio_lab_ojogo_da_vida.pdf
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/jogodavida.c
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/out
+previous_semesters/pspd-2023.1-master/gpu/Trabalho 02/PSPD_LAB2_PROG_PARALELA_DISTRIBUIDA.pdf
+previous_semesters/pspd-2023.1-master/hadoop
+previous_semesters/pspd-2023.1-master/hadoop/lab_01
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/classes
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/classes/WordCount$IntSumReducer.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/classes/WordCount$TokenizerMapper.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/classes/WordCount.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/contadorPalavras.jar
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/input_data
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/input_data/input.txt
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/Makefile
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/readme.md
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/contadorPalavras/WordCount.java
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/Enunciado.pdf
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/README.md
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes/FriendsCount$FriendsCountMapper.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes/FriendsCount$FriendsCountReducer.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes/FriendsCount$IntSumReducer.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes/FriendsCount$MyMapper.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes/FriendsCount$MyReducer.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes/FriendsCount$TokenizerMapper.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/classes/FriendsCount.class
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/FriendsCount.jar
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/FriendsCount.java
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/input_data
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/input_data/input.txt
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/Makefile
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/redeAmizades/readme.md
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/Relatorio
+previous_semesters/pspd-2023.1-master/hadoop/lab_01/Relatorio/Lab01 - Map_Reduce.pdf
+previous_semesters/pspd-2023.1-master/input_aletorio.txt
+previous_semesters/pspd-2023.1-master/mpi
+previous_semesters/pspd-2023.1-master/mpi/lab
+previous_semesters/pspd-2023.1-master/mpi/lab/item1
+previous_semesters/pspd-2023.1-master/mpi/lab/item1.c
+previous_semesters/pspd-2023.1-master/mpi/lab/item2.c
+previous_semesters/pspd-2023.1-master/mpi/lab/Lab_MPI.pdf
+previous_semesters/pspd-2023.1-master/mpi/lab_02
+previous_semesters/pspd-2023.1-master/mpi/lab_02/fractal
+previous_semesters/pspd-2023.1-master/mpi/lab_02/fractal.c
+previous_semesters/pspd-2023.1-master/mpi/lab_02/fractalmpi_io
+previous_semesters/pspd-2023.1-master/mpi/lab_02/fractalmpi_io.c
+previous_semesters/pspd-2023.1-master/mpi/lab_02/fractalmpiserial
+previous_semesters/pspd-2023.1-master/mpi/lab_02/fractalmpiserial.c
+previous_semesters/pspd-2023.1-master/mpi/lab_02/Lab_PSPD_MPI.pdf
+previous_semesters/pspd-2023.1-master/mpi/lab_02/out_julia_normal.bmp
+previous_semesters/pspd-2023.1-master/mpi/lab_02/out_julia_parallel.bmp
+previous_semesters/pspd-2023.1-master/mpi/lab_02/saida
+previous_semesters/pspd-2023.1-master/mpi/mpi
+previous_semesters/pspd-2023.1-master/mpi/mpi/item1.c
+previous_semesters/pspd-2023.1-master/mpi/mpi/item2.c
+previous_semesters/pspd-2023.1-master/mpi/mpi/saida
+previous_semesters/pspd-2023.1-master/mpi/mpi/teste.c
+previous_semesters/pspd-2023.1-master/projeto_final
+previous_semesters/pspd-2023.1-master/projeto_final/codigos
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/debian
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/debian/install_docker_debian11.sh
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/debian/install_k8s_debian11.sh
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/k8s
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/k8s/broker.yaml
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/k8s/elastic.yaml
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/k8s/ingress.yaml
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/k8s/kibana.yaml
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/k8s/manifest_deploy.yaml
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/config/k8s/zookeper-deployment.yaml
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/develop
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/develop/Dockerfile
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/develop/executor.py
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/develop/jogodavida_mpi_omp.c
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/develop/jogodavida_spark.py
+previous_semesters/pspd-2023.1-master/projeto_final/codigos/develop/start.sh
+previous_semesters/pspd-2023.1-master/projeto_final/docs
+previous_semesters/pspd-2023.1-master/projeto_final/docs/apresentacao_final.pdf
+previous_semesters/pspd-2023.1-master/projeto_final/docs/relatorio_final.pdf
+previous_semesters/pspd-2023.1-master/projeto_final/PSPD2023.1_PPesquisa_final.pdf
+previous_semesters/pspd-2023.1-master/projeto_final/README.md
+previous_semesters/pspd-2023.1-master/provas
+previous_semesters/pspd-2023.1-master/provas/p1
+previous_semesters/pspd-2023.1-master/provas/p1/Prova individual_ Revisão da tentativa.pdf
+previous_semesters/pspd-2023.1-master/provas/p1/questoes
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/03
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/03/03.c
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/Makefile.prog
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/prog_client.c
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/prog_clnt.c
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/prog.h
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/prog_server.c
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/prog_svc.c
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/prog.x
+previous_semesters/pspd-2023.1-master/provas/p1/questoes/04/prog_xdr.c
+previous_semesters/pspd-2023.1-master/provas/p1/resumo
+previous_semesters/pspd-2023.1-master/provas/p1/resumo/p1.md
+previous_semesters/pspd-2023.1-master/provas/p2
+previous_semesters/pspd-2023.1-master/provas/p2/item1.c
+previous_semesters/pspd-2023.1-master/provas/p2/item5.c
+previous_semesters/pspd-2023.1-master/provas/p2/item6
+previous_semesters/pspd-2023.1-master/provas/p2/item6.c
+previous_semesters/pspd-2023.1-master/provas/p2/item8.c
+previous_semesters/pspd-2023.1-master/provas/p2/item9.c
+previous_semesters/pspd-2023.1-master/provas/p2/omp
+previous_semesters/pspd-2023.1-master/provas/p2/resumo
+previous_semesters/pspd-2023.1-master/provas/p2/teste.c
+previous_semesters/pspd-2023.1-master/readme.md
+previous_semesters/pspd-2023.1-master/revisao
+previous_semesters/pspd-2023.1-master/revisao/mpi
+previous_semesters/pspd-2023.1-master/revisao/mpi/item1.c
+previous_semesters/pspd-2023.1-master/revisao/mpi/item2
+previous_semesters/pspd-2023.1-master/revisao/mpi/item2.c
+previous_semesters/pspd-2023.1-master/revisao/mpi/PSPD2023.1_Lista_ex.pdf
+previous_semesters/pspd-2023.1-master/revisao/omp
+previous_semesters/pspd-2023.1-master/revisao/omp/hello
+previous_semesters/pspd-2023.1-master/revisao/omp/hello/hello
+previous_semesters/pspd-2023.1-master/revisao/omp/hello/hello_2.c
+previous_semesters/pspd-2023.1-master/revisao/omp/hello/hello_3.c
+previous_semesters/pspd-2023.1-master/revisao/omp/hello/hello.c
+previous_semesters/pspd-2023.1-master/revisao/omp/slides.pdf
+previous_semesters/pspd-2023.1-master/revisao/omp/vector
+previous_semesters/pspd-2023.1-master/revisao/omp/vector/main.c
+previous_semesters/pspd-2023.1-master/revisao/omp/vector/main.o
+previous_semesters/pspd-2023.1-master/revisao/omp/vector/Makefile
+previous_semesters/pspd-2023.1-master/revisao/omp/vector/src
+previous_semesters/pspd-2023.1-master/revisao/omp/vector/src/2-vsum.c
+previous_semesters/pspd-2023.1-master/revisao/omp/vector/src/2-vsum.exec
+previous_semesters/pspd-2023.1-master/revisao/omp/vector/src/sum.h
+previous_semesters/pspd-2023.1-master/rpc
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_client
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_client.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_client.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_clnt.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_clnt.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula.h
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_server
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_server.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_server.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_svc.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_svc.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula.x
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_xdr.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/calcula_xdr.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc/Makefile.calcula
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc.pdf
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_client
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_client.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_client.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_clnt.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_clnt.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add.h
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_server
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_server.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_server.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_svc.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_svc.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add.x
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_xdr.c
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/add_xdr.o
+previous_semesters/pspd-2023.1-master/rpc/lab_rpc_soma/Makefile.add
+previous_semesters/pspd-2023.1-master/spark
+previous_semesters/pspd-2023.1-master/spark/Lab01-PySpark.ipynb
+previous_semesters/pspd_exerc_rpc
+previous_semesters/pspd_exerc_rpc/somalista
+previous_semesters/pspd_exerc_rpc/somalista/loc_somalista.c
+previous_semesters/pspd_exerc_rpc/somalista/somalista.x
+previous_semesters/pspd_exerc_rpc/somavet
+previous_semesters/pspd_exerc_rpc/somavet/loc_somavet.c
+previous_semesters/pspd_exerc_rpc/somavet/somavet.x
+previous_semesters/pspd_kafka_kibana.pdf
+previous_semesters/q1.c
+previous_semesters/q4.c
+previous_semesters/q7.c
+previous_semesters/revisao-omp
+previous_semesters/revisao-omp.c
+previous_semesters/rpc
+previous_semesters/rpc/somalista
+previous_semesters/rpc/somalista/loc_somalista.c
+previous_semesters/rpc/somalista/somalista.x
+previous_semesters/rpc/somavet
+previous_semesters/rpc/somavet/loc_somavet.c
+previous_semesters/rpc/somavet/somavet.x
+previous_semesters/somalista
+previous_semesters/somalista/loc_somalista.c
+previous_semesters/somalista/somalista.x
+previous_semesters/somavet
+previous_semesters/somavet/loc_somavet.c
+previous_semesters/somavet/somavet.x
+previous_semesters/somavet_cuda
+previous_semesters/somavet_cuda/1_add_cpu.cu
+previous_semesters/somavet_cuda/2_add_gpu.cu
+previous_semesters/somavet_cuda/3_add_gpu_blocks.cu
+previous_semesters/somavet_cuda/4_add_gpu_grid.cu
+previous_semesters/somavet_cuda/5_add_gpu_grid_loop.cu
+previous_semesters/t12_serial.txt
+previous_semesters/trab-final
+previous_semesters/trab-final/dockerfile
+previous_semesters/trab-final/jogo-da-vida.c
+previous_semesters/trab-final/jogodavida-mpi-openmp.c
+previous_semesters/trab-final/jogo-da-vida-parallel.c
+previous_semesters/trab-final/jogodavida-spark.ipynb
+previous_semesters/trab-final/socket_server.c
+previous_semesters/trab-final/socket-server.yml
+previous_semesters/trab-final/trabalho_final_pspd
+previous_semesters/trab-final/trabalho_final_pspd/Dockerfile
+previous_semesters/trab-final/trabalho_final_pspd/jogodavida_mpi_openmp.c
+previous_semesters/trab-final/trabalho_final_pspd/jogodavida_spark.ipynb
+previous_semesters/trab-final/trabalho_final_pspd/Relatório_Trab_Final_PSPD.pdf
+previous_semesters/trab-final/trabalho_final_pspd/Slides - Projeto Final - PSPD.pdf
+previous_semesters/trab-final/trabalho_final_pspd/socket_server.c
+previous_semesters/trab-final/trabalho_final_pspd/socket-server.yml
